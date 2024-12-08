@@ -1,0 +1,26 @@
+To play, type:   python pacman.py
+For help, type:  python pacman.py -h
+See http://inst.eecs.berkeley.edu/~cs188 for more information.
+
+**Commands:**
+- 
+* Common one game:
+```bash
+python3 pacman.py -p ExpectimaxAgent -a depth=3
+```
+* Common multiple games: 
+```bash
+python3 pacman.py -l smallClassic -p ExpectimaxAgent -a evalFn=better -q -n 100
+```
+* Small with better eval for multiple games: 
+```bash
+python3 pacman.py -l smallClassic -p ExpectimaxAgent -a evalFn=better -q -n 100
+```
+* Trapped with better eval for multiple games: 
+```bash
+python3 pacman.py -p ExpectimaxAgent -l trappedClassic -g DirectionalGhost -a depth=3 -q -n 100
+```
+* Small with better eval for multiple games: 
+```bash
+python3 pacman.py -l smallClassic -p ExpectimaxAgent -g DirectionalGhost -a evalFn=better -q -n 100
+```
